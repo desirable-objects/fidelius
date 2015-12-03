@@ -1,0 +1,18 @@
+{
+  "name": "swallows",
+  "version": "1.0.0",
+  "description": "Swallows HTTP requests and spits them out when you ask it to",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "code": "^2.0.1",
+    "hapi": "^11.1.2",
+    "hapi-ending": "^0.5.4",
+    "joi": "^7.0.1",
+    "mocha": "^2.3.4"
+  }
+}
