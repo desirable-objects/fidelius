@@ -54,8 +54,25 @@ server.route({
     }
 });
 
-server.start(function () {
-    console.log('Server running at:', server.info.uri);
-});
+server.register([
+  {
+    register: require('vision')
+  },
+  {
+    register: require('inert')
+  },
+  {
+    register: require('hapi-ending'),
+    options: { enabled: true }
+  }], (err) => {
+     if (err) {
+         console.log('Failed to load documentation plugin');
+     }
+
+     server.start(function () {
+         console.log('Server running at:', server.info.uri);
+     });
+
+ });
 
 module.exports = server;
