@@ -1,4 +1,4 @@
-Fidelius
+Fidelius [![Build Status](https://travis-ci.org/desirable-objects/fidelius.svg)](https://travis-ci.org/desirable-objects/fidelius)
 ========
 
 Fidelius: Your own httpbin.
